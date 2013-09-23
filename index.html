@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="column_sized.js"></script>
+		<script>
+			
+			$(document).ready(function(){
+	column_sized("  ");
+				$(".column_sized").each(function(){
+					$(this).find("span").text("outer height="+$(this).height()+", inner height="+$(this).find("div").height());
+				});
+			});
+			$(window).resize(function(){
+				$(".column_sized").each(function(){
+					$(this).find("span").text("outer height="+$(this).height()+", inner height="+$(this).find("div").height());
+				});
+	column_sized();
+			});
+		</script>
+	</head>
+	<body>
+		<div style="width:100%;max-width:1200px;">
+			<div class="column_sized" style="width:32%;margin-right:10px;background-color:#34c1ca;float:left;">
+				<div style="width:100%;background-color:#ff4e00;opacity:0.5;">
+				<span style="font-weight:bold;">holder</span>
+					<p style="opacity:1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rhoncus velit vitae dapibus consequat. Donec eu pulvinar lacus. Vestibulum fringilla diam sit amet tellus placerat pretium. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam feugiat tellus sit amet ligula ultrices elementum. Nulla semper, urna pellentesque aliquet rhoncus, lectus magna porttitor turpis, ac placerat diam nibh sed dolor. Fusce ut consequat nisi. Aliquam sollicitudin dolor id metus laoreet semper. Fusce aliquam lacus in sollicitudin faucibus. Integer feugiat dolor eget semper lacinia. Nunc pharetra nec sem ut auctor. Sed eros est, sodales eget nisl quis, iaculis euismod urna.
+
+Etiam euismod nisi in lorem semper convallis. Sed posuere scelerisque lobortis. Nam elementum sagittis magna eu accumsan. Suspendisse sed purus lorem. Vestibulum erat sem, adipiscing ac ullamcorper elementum, faucibus sit amet felis. Aliquam vitae gravida diam. Donec ullamcorper laoreet ante vitae porta. Ut cursus lacinia mauris, in vulputate dolor cursus at. Mauris quis enim congue, elementum arcu at, vehicula est. Phasellus rutrum dui sodales pellentesque lacinia. Sed feugiat ultricies massa, ut luctus justo ultrices id. Duis semper mauris ante, eu fermentum lacus imperdiet aliquet.
+
+Integer pharetra porta laoreet. Praesent faucibus arcu mi, eget condimentum tellus porta sed. In faucibus volutpat velit eu lacinia. Sed libero metus, ornare vel aliquet a, viverra rutrum neque. Sed nisl tortor, sollicitudin sed lorem sit amet, egestas mollis erat. Mauris sit amet posuere mi, ac porttitor neque. Sed gravida dapibus libero eu facilisis.
+				
+				</div>
+			</div>
+			<div class="column_sized" style="width:32%;margin-right:10px;background-color:#34c1ca;float:left;">
+				<div style="width:100%;background-color:#ff4e00;opacity:0.5;">
+				<span style="font-weight:bold;">holder</span>
+					<p style="opacity:1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rhoncus velit vitae dapibus consequat. Donec eu pulvinar lacus. Vestibulum fringilla diam sit amet tellus placerat pretium. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam feugiat tellus sit amet ligula ultrices elementum. Nulla semper, urna pellentesque aliquet rhoncus, lectus magna porttitor turpis, ac placerat diam nibh sed dolor. Fusce ut consequat nisi. Aliquam sollicitudin dolor id metus laoreet semper. Fusce aliquam lacus in sollicitudin faucibus. Integer feugiat dolor eget semper lacinia. Nunc pharetra nec sem ut auctor. Sed eros est, sodales eget nisl quis, iaculis euismod urna.
+
+Integer ultrices, erat quis vestibulum pretium, metus dui posuere risus, non pretium quam ipsum nec metus. Curabitur sit amet purus non lacus adipiscing luctus ut non lorem. Duis mattis consectetur tellus, et dapibus velit sodales lacinia. Sed vitae erat rhoncus, tincidunt est nec, dapibus dui. Sed sed porttitor lorem. Integer egestas imperdiet dolor vel gravida. Mauris non turpis eu nisi elementum feugiat. Sed et ante at lorem interdum dignissim. Aenean lobortis, leo sed accumsan tincidunt, est mi ultricies sem, non bibendum enim eros vel eros. Curabitur sodales commodo leo, consectetur tincidunt sapien facilisis nec. Sed nulla metus, malesuada at rhoncus at, aliquet id metus. Suspendisse non quam mattis, dictum neque ut, adipiscing dolor. Sed a iaculis magna.</p>
+					
+				</div>
+			</div>
+			<div class="column_sized" style="width:32%;margin-right:10px;background-color:#34c1ca;float:left;">
+				<div style="width:100%;background-color:#ff4e00;opacity:0.5;">
+				<span  style="font-weight:bold;">holder</span>
+					<p style="opacity:1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rhoncus velit vitae dapibus consequat. Donec eu pulvinar lacus. Vestibulum fringilla diam sit amet tellus placerat pretium. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam feugiat tellus sit amet ligula ultrices elementum. Nulla semper, urna pellentesque aliquet rhoncus, lectus magna porttitor turpis, ac placerat diam nibh sed dolor. Fusce ut consequat nisi. Aliquam sollicitudin dolor id metus laoreet semper. Fusce aliquam lacus in sollicitudin faucibus. Integer feugiat dolor eget semper lacinia. Nunc pharetra nec sem ut auctor. Sed eros est, sodales eget nisl quis, iaculis euismod urna.
+
+				
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
